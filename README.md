@@ -25,7 +25,7 @@ export default {
     image: example, // imported image
     clockColor: '#fff',     // color of clock
     brightness: 0.4, // brightness of background 0 -> 1
-    // grayscale: boolean, // enable grayscale filter
+    // grayscale: true, // enable grayscale filter
     font: {
       family: "'Open Sans'", // font family ( default: Roboto )
       size: '15vw',
