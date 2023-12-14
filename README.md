@@ -4,7 +4,7 @@
 
 ## Installation
 - Clone repository
-- In root of repository run `sudo ./install.sh`
+- In root of repository run `./install.sh`
 - Reboot system
 
 > Note: After change src/config.ts you need to rebuild a project `yarn && yarn build`
