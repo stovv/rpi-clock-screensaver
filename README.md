@@ -1,13 +1,13 @@
-# Clock Web-ScreenSaver
+# Lock Screen concept for any smart-home web ui
 
-![screenshot](docs/screen.png)
+![screenshot](docs/example.gif)
 
 ## Installation
-- Install and configure [webscreensaver](https://github.com/lmartinking/webscreensaver)
 - Clone repository
-- Install deps and build `yarn && yarn build`
-- Edit `~/.xscreensaver` file, add `-url file://<folder where cloned repo>/dist/index.html` to line with `webscreensaver`
+- In root of repository run `sudo ./install.sh`
 - Reboot system
+
+> Note: After change src/config.ts you need to rebuild a project `yarn && yarn build`
 
 ## Configuration
 
@@ -41,6 +41,17 @@ export default {
     // ...
   },
 } as BackgroundMapping;
+
+type LockConfig = {
+  lock: string;
+  iframeSrc: string;
+  // blank: string | null;
+};
+export const lockConfig: LockConfig = {
+  lock: '10m', // time before screen locked
+  // blank: '10m',
+  iframeSrc: 'http://spruthub.local' // url for your smart home ui ( default - localhost:80 )
+};
 ```
 
 In example screensaver automatically change background at `10:00` to `example1`, at `23:00` to `example2` and at `00:00` to `example`

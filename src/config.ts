@@ -1,23 +1,27 @@
 import example from './assets/example.jpg';
 
+export type Font = {
+  family: string;
+  size?: string;
+  weight: number;
+};
+
+export type BgMappingItem = {
+  image: string;
+  clockColor: string;
+  grayscale?: boolean;
+  brightness?: number; // 0 -> 1
+  font?: Font;
+};
+
 type BackgroundMapping = {
-  [schedule: number]: {
-    image: string;
-    clockColor: string;
-    grayscale?: boolean;
-    brightness?: number; // 0 -> 1
-    font?: {
-      family: string;
-      size?: string;
-      weight: number;
-    };
-  };
+  [schedule: number]: BgMappingItem;
 }
 
 /*
 * Background mapping
 * */
-export default {
+export const bgMapping = {
    0: {
       image: example,
       clockColor: '#fff',
@@ -39,3 +43,15 @@ export default {
    //  }
   // }
 } as BackgroundMapping;
+
+type LockConfig = {
+  lock: string;
+  iframeSrc: string;
+  // blank: string | null;
+};
+
+export const lockConfig: LockConfig = {
+  lock: '10m',
+  // blank: '10m',
+  iframeSrc: 'http://localhost'
+};

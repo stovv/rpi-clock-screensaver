@@ -1,7 +1,7 @@
 {
   "name": "home-hub-screensaver",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.3",
     "date-fns": "^2.30.0",
     "parse-duration": "^1.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-swipeable": "^7.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",

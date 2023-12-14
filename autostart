@@ -1,0 +1,5 @@
+@lxpanel --profile LXDE
+@xset s off
+@xset -dpms
+@xset s noblank
+@chromium --kiosk file://<PATH> --window-size=800,480 --window-position=0,0

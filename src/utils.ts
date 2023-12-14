@@ -1,7 +1,7 @@
-import config from "./config.ts";
+import { bgMapping } from "./config.ts";
 
 export const selectHour = (hour: number): number | null => {
-  let hours = Object.keys(config).map(Number);
+  let hours = Object.keys(bgMapping).map(Number);
   if (hours.length === 0) return null;
   const selected = hours[0];
 
