@@ -29,7 +29,7 @@ const App = () => (
         zIndex: 200,
         display: 'block'
       }}
-      loading={"eager"}
+      loading="lazy"
     />
   </div>
 )
