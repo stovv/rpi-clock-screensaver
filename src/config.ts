@@ -51,7 +51,7 @@ type LockConfig = {
 };
 
 export const lockConfig: LockConfig = {
-  lock: '10m',
+  lock: '1m',
+  iframeSrc: 'http://localhost',
   // blank: '10m',
-  iframeSrc: 'http://localhost'
 };

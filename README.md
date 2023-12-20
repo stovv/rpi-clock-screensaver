@@ -4,15 +4,13 @@
 
 ## Installation
 - Clone repository
+- Install node v18+
 - In root of repository run `./install.sh`
 - Reboot system
 
-> Note: After change src/config.ts you need to rebuild a project `yarn && yarn build`
+> Note: After change src/config.ts you need to reboot system or rebuild project
 
 ## Configuration
-
-Open `./src/config.ts` file
-Here is example:
 
 ```ts
 import example from './assets/example.jpg';
