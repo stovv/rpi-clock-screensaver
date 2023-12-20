@@ -20,8 +20,7 @@ sudo cp ~/.config/lxsession/LXDE/autostart  "$REPO_PATH/autostart-${date}.backup
 sudo cp $REPO_PATH/autostart  ~/.config/lxsession/LXDE/autostart
 sudo sed -i -e "s|PATH|$REPO_PATH|" ~/.config/lxsession/LXDE/autostart
 
-echo -e "Reboot now? (y/n)"
-read
-if "$REPLY" = "y"; then
-  sudo reboot
-fi
+read -p "Reboot now? (Y/n): " yn
+case $yn in
+	Y ) sudo reboot;;
+esac
